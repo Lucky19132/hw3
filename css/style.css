@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+div {
+  border: 2px solid salmon;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+ul,
+li {
+  list-style: none;
+}
+:root {
+    --big-space: 460px;
+    --bar-width:1200px;
+    --main-width: 980px;
+  --color-orange: #ba9066;
+  --color-red: #b70f0b;
+  --bg: #112141;
+  --bg-b: #646464;
+}
+body {
+  min-height: 1200px;
+  background-image: url(../img/images/bg-top.jpg),
+    url(../img/images/bg-bottom.jpg);
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  background-position: top center, bottom center;
+  background-size: contain, contain;
+}
+.bar {
+  display: flex;
+  width: var(--bar-width);
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.bar_s {
+  width: 250px;
+}
+.bar li + li {
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  padding-left: 30px;
+}
+.main_ad{
+    width: var(--main-width);
+    margin: 0 auto;
+    padding-top: var(--big-space);
+    display: grid;
+    grid-template-columns: 242px 491px 254px;
+    position: relative;
+}
+#long_den{
+    position: absolute;
+    top: var(--big-space);
+    left: -80px;
+}
+.ad_left{
+    display: grid;
+    grid-template-rows: 125px 62px 62px;
+}
+#tai-game, #dang-ky, #nap-the{
+    background-image: url(../img/images/buttons-left.png);
+}
